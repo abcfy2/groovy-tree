@@ -10,7 +10,9 @@ A tree command by using groovy. Just for my exercise.
 Here is the screenshot for runtime both groovy and java.
 
 groovy:
+
 ![groovy](http://static.oschina.net/uploads/code/201409/18234449_o1nS.jpg)
 
 java:
+
 ![java](http://static.oschina.net/uploads/code/201409/18234649_fFoK.jpg)
