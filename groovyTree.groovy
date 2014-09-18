@@ -4,12 +4,15 @@ if (args) {
 }
 printDir path,0
 
-def printDir(File path, int depth,boolean isLast = false) {
+def printDir(File path, int depth,boolean isLast = false, String nextLinePre = "") {
     if (depth > 0) {
-        if (isLast)
+        if (isLast) {
             print '└'
-        else
+            nextLinePre += "    "
+        } else {
             print '├'
+            nextLinePre += "│   "
+        }
         print '── '
     }
 
@@ -17,11 +20,11 @@ def printDir(File path, int depth,boolean isLast = false) {
     if (path.isDirectory()) {
         File[] files = path.listFiles()
         files.each {
-            print ' '*depth*4
+            print nextLinePre
             if (it == files.last())
-                printDir(it, depth+1, true)
+                printDir(it, depth+1, true, nextLinePre)
             else
-                printDir(it, depth+1)
+                printDir(it, depth+1, false, nextLinePre)
         }
     }
 }
