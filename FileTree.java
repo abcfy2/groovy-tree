@@ -1,13 +1,13 @@
 import java.io.File;
 
-public class Tree {
+public class FileTree {
     public static void main(String[] args) {
         File path = new File(".");
         if (args.length > 0) {
             path = new File(args[0]);
         }
     
-        new Tree().printDir(path, 0, false, "");
+        new FileTree().printDir(path, 0, false, "");
     }
     
     public void printDir(File path, int depth, boolean isLast, String nextLinePre) {
