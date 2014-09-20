@@ -1,18 +1,21 @@
-groovy-tree
-===========
+# jTree
 
-A tree command by using groovy. Just for my exercise.
+An utility, like Linux `tree` which list contents of directories in a tree-like format, in Java platform.
 
-``tree`` command can be found both in windows and linux. It used for list contents of directories in a tree-like format.
+## Java
 
-``Tree.java`` is override for the ``groovyTree.groovy`` by using java code. Just for contrast.
+src/java/FileTree.java
 
-Here is the screenshot for runtime both groovy and java.
+![java](http://static.oschina.net/uploads/code/201409/18234649_fFoK.jpg)
 
-groovy:
+## Groovy
+
+src/groovy/groovyTree.groovy
 
 ![groovy](http://static.oschina.net/uploads/code/201409/18234449_o1nS.jpg)
 
-java:
+## JavaScript
 
-![java](http://static.oschina.net/uploads/code/201409/18234649_fFoK.jpg)
+src/javascript/tree.js
+
+* usage: `jrunscript tree.js`
