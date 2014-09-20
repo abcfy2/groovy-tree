@@ -28,10 +28,7 @@ public class FileTree {
             int i = 1;
             for (File file: files) {
                 System.out.print(nextLinePre);
-                if (i==files.length)
-                    printDir(file, depth+1, true, nextLinePre);
-                else
-                    printDir(file, depth+1, false, nextLinePre);
+                printDir(file, depth+1, i==files.length, nextLinePre);
                 i ++;
             }
         }

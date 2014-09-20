@@ -21,10 +21,7 @@ def printDir(File path, int depth,boolean isLast = false, String nextLinePre = "
         File[] files = path.listFiles()
         files.each {
             print nextLinePre
-            if (it == files.last())
-                printDir(it, depth+1, true, nextLinePre)
-            else
-                printDir(it, depth+1, false, nextLinePre)
+            printDir(it, depth+1, it==files.last(), nextLinePre)
         }
     }
 }
