@@ -2,8 +2,6 @@
 
 An utility, like Linux `tree` which list contents of directories in a tree-like format, in Java platform.
 
-**NOTE**: Because the encoding of code files is ``utf8``, so if you want to run on ``Windows``, please pass the ``-encoding utf8`` to java utilities. For example: ``javac -encoding utf8``,``groovy -c utf8``, ``jrunscript -encoding utf8``.
-
 ## Java
 
 src/java/FileTree.java
